@@ -2,5 +2,9 @@
 <Project ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'MakeReferenceImage|x86'">
     <StartArguments>MakeReferenceImage</StartArguments>
+    <StartWorkingDirectory>$(SolutionDir)</StartWorkingDirectory>
+  </PropertyGroup>
+    <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Create8PlayerMod|x86'">
+    <StartWorkingDirectory>$(SolutionDir)</StartWorkingDirectory>
   </PropertyGroup>
 </Project>

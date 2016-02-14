@@ -2,3 +2,8 @@ bin/
 obj/
 *.userprefs
 packages/
+.vs/
+*.exe
+*.dll
+*.xml
+*.manifest

@@ -30,24 +30,27 @@
     <PlatformTarget>x86</PlatformTarget>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'MakeReferenceImage|AnyCPU'">
-    <OutputPath>bin\MakeReferenceImage\</OutputPath>
+    <OutputPath>$(SolutionDir)</OutputPath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Create8PlayerMod|AnyCPU'">
-    <OutputPath>bin\Create8PlayerMod\</OutputPath>
+    <OutputPath>$(SolutionDir)</OutputPath>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="BaseTowerFall, Version=1.0.0.0, Culture=neutral, processorArchitecture=x86">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\bin\BaseTowerFall.exe</HintPath>
-    </Reference>
     <Reference Include="Microsoft.Xna.Framework, Version=4.0.0.0, Culture=neutral, PublicKeyToken=842cf8be1de50553, processorArchitecture=x86" />
     <Reference Include="Microsoft.Xna.Framework.Game, Version=4.0.0.0, Culture=neutral, PublicKeyToken=842cf8be1de50553, processorArchitecture=x86" />
     <Reference Include="Microsoft.Xna.Framework.Graphics, Version=4.0.0.0, Culture=neutral, PublicKeyToken=842cf8be1de50553, processorArchitecture=x86" />
     <Reference Include="Microsoft.Xna.Framework.Net, Version=4.0.0.0, Culture=neutral, PublicKeyToken=842cf8be1de50553, processorArchitecture=MSIL" />
-    <Reference Include="SharpDX, Version=2.6.0.0, Culture=neutral, PublicKeyToken=null" />
-    <Reference Include="SharpDX.DirectInput, Version=2.6.0.0, Culture=neutral, PublicKeyToken=null" />
+    <Reference Include="SharpDX">
+      <HintPath>..\SharpDX.dll</HintPath>
+    </Reference>
+    <Reference Include="SharpDX.DirectInput">
+      <HintPath>..\SharpDX.DirectInput.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.XML" />
+    <Reference Include="TowerFallReference">
+      <HintPath>..\TowerFallReference.exe</HintPath>
+    </Reference>
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <ItemGroup>
@@ -65,35 +68,6 @@
     <Compile Include="TreasureSpawner.cs" />
     <Compile Include="VersusMatchResults.cs" />
     <Compile Include="VersusPlayerMatchResults.cs" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Content\Atlas\menuAtlas\variants\noHeadBounce.png">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </None>
-    <None Include="Content\Atlas\menuAtlas\variants\noLedgeGrab.png">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </None>
-    <None Include="Content\Atlas\menuAtlas\variants\infiniteArrows.png">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </None>
-    <None Include="Content\Atlas\menuAtlas\variants\noDodgeCooldowns.png">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </None>
-    <None Include="Content\Atlas\menuAtlas\variants\awfullySlowArrows.png">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </None>
-    <None Include="Content\Atlas\menuAtlas\variants\awfullyFastArrows.png">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </None>
-    <None Include="Content\Atlas\menuAtlas\variants\gottaGoFast.png">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </None>
-    <None Include="Content\Atlas\menuAtlas\gameModes\crawl.png">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </None>
-    <None Include="Content\Atlas\menuAtlas\gameModes\respawn.png">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </None>
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Patcher\Patcher.csproj">
