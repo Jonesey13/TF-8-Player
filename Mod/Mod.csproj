@@ -1,0 +1,104 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">DebugLinux</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{5C1AA190-DD28-41A1-8DD2-FEF3A9DEE28A}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>Mod</RootNamespace>
+    <AssemblyName>Mod</AssemblyName>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'DebugLinux|AnyCPU' ">
+    <OutputPath>..\bin</OutputPath>
+    <DebugSymbols>true</DebugSymbols>
+    <ConsolePause>false</ConsolePause>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Optimize>false</Optimize>
+    <DefineConstants>DEBUG;</DefineConstants>
+    <DebugType>full</DebugType>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'DebugWindows|AnyCPU' ">
+    <OutputPath>..\bin</OutputPath>
+    <DebugSymbols>true</DebugSymbols>
+    <ConsolePause>false</ConsolePause>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Optimize>false</Optimize>
+    <DefineConstants>DEBUG;</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'MakeReferenceImage|AnyCPU'">
+    <OutputPath>bin\MakeReferenceImage\</OutputPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Create8PlayerMod|AnyCPU'">
+    <OutputPath>bin\Create8PlayerMod\</OutputPath>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="BaseTowerFall, Version=1.0.0.0, Culture=neutral, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\bin\BaseTowerFall.exe</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Xna.Framework, Version=4.0.0.0, Culture=neutral, PublicKeyToken=842cf8be1de50553, processorArchitecture=x86" />
+    <Reference Include="Microsoft.Xna.Framework.Game, Version=4.0.0.0, Culture=neutral, PublicKeyToken=842cf8be1de50553, processorArchitecture=x86" />
+    <Reference Include="Microsoft.Xna.Framework.Graphics, Version=4.0.0.0, Culture=neutral, PublicKeyToken=842cf8be1de50553, processorArchitecture=x86" />
+    <Reference Include="Microsoft.Xna.Framework.Net, Version=4.0.0.0, Culture=neutral, PublicKeyToken=842cf8be1de50553, processorArchitecture=MSIL" />
+    <Reference Include="SharpDX, Version=2.6.0.0, Culture=neutral, PublicKeyToken=null" />
+    <Reference Include="SharpDX.DirectInput, Version=2.6.0.0, Culture=neutral, PublicKeyToken=null" />
+    <Reference Include="System" />
+    <Reference Include="System.XML" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <ItemGroup>
+    <Compile Include="ArcherPortrait.cs" />
+    <Compile Include="AwardInfo.cs" />
+    <Compile Include="FightButton.cs" />
+    <Compile Include="HeadhuntersRoundLogic.cs" />
+    <Compile Include="Level.cs" />
+    <Compile Include="MatchSettings.cs" />
+    <Compile Include="MatchTeams.cs" />
+    <Compile Include="PauseMenu.cs" />
+    <Compile Include="Player.cs" />
+    <Compile Include="PressStartText.cs" />
+    <Compile Include="RollcallElement.cs" />
+    <Compile Include="TreasureSpawner.cs" />
+    <Compile Include="VersusMatchResults.cs" />
+    <Compile Include="VersusPlayerMatchResults.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Content\Atlas\menuAtlas\variants\noHeadBounce.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Content\Atlas\menuAtlas\variants\noLedgeGrab.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Content\Atlas\menuAtlas\variants\infiniteArrows.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Content\Atlas\menuAtlas\variants\noDodgeCooldowns.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Content\Atlas\menuAtlas\variants\awfullySlowArrows.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Content\Atlas\menuAtlas\variants\awfullyFastArrows.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Content\Atlas\menuAtlas\variants\gottaGoFast.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Content\Atlas\menuAtlas\gameModes\crawl.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Content\Atlas\menuAtlas\gameModes\respawn.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Patcher\Patcher.csproj">
+      <Project>{B1DF3728-5F4C-4987-8213-4DCE21255B0F}</Project>
+      <Name>Patcher</Name>
+    </ProjectReference>
+  </ItemGroup>
+</Project>

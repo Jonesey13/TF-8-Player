@@ -1,0 +1,37 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.24720.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Patcher", "Patcher\Patcher.csproj", "{B1DF3728-5F4C-4987-8213-4DCE21255B0F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mod", "Mod\Mod.csproj", "{5C1AA190-DD28-41A1-8DD2-FEF3A9DEE28A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Create8PlayerMod|x86 = Create8PlayerMod|x86
+		DebugLinux|x86 = DebugLinux|x86
+		DebugWindows|x86 = DebugWindows|x86
+		MakeReferenceImage|x86 = MakeReferenceImage|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B1DF3728-5F4C-4987-8213-4DCE21255B0F}.Create8PlayerMod|x86.ActiveCfg = Create8PlayerMod|x86
+		{B1DF3728-5F4C-4987-8213-4DCE21255B0F}.Create8PlayerMod|x86.Build.0 = Create8PlayerMod|x86
+		{B1DF3728-5F4C-4987-8213-4DCE21255B0F}.DebugLinux|x86.ActiveCfg = Debug|x86
+		{B1DF3728-5F4C-4987-8213-4DCE21255B0F}.DebugLinux|x86.Build.0 = Debug|x86
+		{B1DF3728-5F4C-4987-8213-4DCE21255B0F}.DebugWindows|x86.ActiveCfg = Debug|x86
+		{B1DF3728-5F4C-4987-8213-4DCE21255B0F}.DebugWindows|x86.Build.0 = Debug|x86
+		{B1DF3728-5F4C-4987-8213-4DCE21255B0F}.MakeReferenceImage|x86.ActiveCfg = MakeReferenceImage|x86
+		{B1DF3728-5F4C-4987-8213-4DCE21255B0F}.MakeReferenceImage|x86.Build.0 = MakeReferenceImage|x86
+		{5C1AA190-DD28-41A1-8DD2-FEF3A9DEE28A}.Create8PlayerMod|x86.ActiveCfg = Create8PlayerMod|Any CPU
+		{5C1AA190-DD28-41A1-8DD2-FEF3A9DEE28A}.Create8PlayerMod|x86.Build.0 = Create8PlayerMod|Any CPU
+		{5C1AA190-DD28-41A1-8DD2-FEF3A9DEE28A}.DebugLinux|x86.ActiveCfg = DebugWindows|Any CPU
+		{5C1AA190-DD28-41A1-8DD2-FEF3A9DEE28A}.DebugLinux|x86.Build.0 = DebugWindows|Any CPU
+		{5C1AA190-DD28-41A1-8DD2-FEF3A9DEE28A}.DebugWindows|x86.ActiveCfg = DebugWindows|Any CPU
+		{5C1AA190-DD28-41A1-8DD2-FEF3A9DEE28A}.DebugWindows|x86.Build.0 = DebugWindows|Any CPU
+		{5C1AA190-DD28-41A1-8DD2-FEF3A9DEE28A}.MakeReferenceImage|x86.ActiveCfg = MakeReferenceImage|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
