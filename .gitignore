@@ -8,3 +8,4 @@ packages/
 *.xml
 *.manifest
 !Pre-Built/*
+!Content/Atlas/*
