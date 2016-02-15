@@ -7,3 +7,4 @@ packages/
 *.dll
 *.xml
 *.manifest
+!Pre-Built/*
