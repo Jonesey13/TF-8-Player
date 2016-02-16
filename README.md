@@ -2,6 +2,8 @@
 
 A Towerfall mod that uses a modified version of the [Bartizan](https://github.com/Kha/Bartizan) modding framework. 
 
+![](https://github.com/Jonesey13/TF-8-Player/blob/master/Demo.gif)
+
 # Features
 * 8 player versus mode
 * 3v3 in team deathmatch
