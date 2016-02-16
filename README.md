@@ -1,6 +1,6 @@
 # 8 Player TowerFall Mod 
 
-A Towerfall mod that uses a modified version of the [Bartizan](https://github.com/Kha/Bartizan) modding framework and [Mono.Cecil](https://github.com/jbevain/cecil). Original copyright belongs to Mark Thorson.
+A Towerfall mod that uses a modified version of the [Bartizan](https://github.com/Kha/Bartizan) modding framework and [Mono.Cecil](https://github.com/jbevain/cecil). Original copyright belongs to Matt Thorson.
 
 ![](https://github.com/Jonesey13/TF-8-Player/blob/master/Demo.gif)
 
