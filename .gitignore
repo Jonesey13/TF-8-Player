@@ -9,3 +9,4 @@ packages/
 *.manifest
 !Pre-Built/*
 !Content/Atlas/*
+*.pdb

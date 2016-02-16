@@ -16,6 +16,7 @@ namespace Mod
         {
             this.portrait.Zoom = 0.6f;
             this.portraitAlt.Zoom = 0.6f;
+            this.flash.Zoom = 0.6f;
         }
 
         public override void Render()
@@ -63,7 +64,7 @@ namespace Mod
                 Draw.Rect(vector2.X, vector2.Y, vector3.X, vector3.Y, this.ArcherData.ColorA);
                 this.portrait.DrawOutline(1);
             }
-            base.Render();
+            Patcher.Patcher.CallRealBase();
             this.gem.DrawOutline(1, 1);
             this.gem.Render();
             if (this.ShowTitle)

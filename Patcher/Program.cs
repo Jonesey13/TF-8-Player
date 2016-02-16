@@ -219,13 +219,20 @@ namespace Patcher
 								if (instr.Operand is MethodReference)
 								{
 									var callee = (MethodReference)instr.Operand;
-									callee = mapMethod((MethodReference)instr.Operand);
-									if (callee.FullName == original.FullName)
-										// replace base calls with ones to $original
-										instr.Operand = savedMethod;
-									else
-										instr.Operand = callee;
-
+                                    if (callee.Name == "CallRealBase")
+                                    {
+                                        var baseMethod = type.BaseType.Resolve().Methods.Single(m => m.Name == method.Name) as MethodReference;
+                                        amendments.Add(() => proc.InsertBefore(instr, proc.Create(OpCodes.Ldarg_0)));
+                                        amendments.Add(() => proc.Replace(instr, proc.Create(OpCodes.Call, baseMethod)));
+                                    }
+                                    else {
+                                        callee = mapMethod((MethodReference)instr.Operand);
+                                        if (callee.FullName == original.FullName)
+                                            // replace base calls with ones to $original
+                                            instr.Operand = savedMethod;
+                                        else
+                                            instr.Operand = callee;
+                                    }
 								}
 								else if (instr.Operand is FieldReference)
 								{
