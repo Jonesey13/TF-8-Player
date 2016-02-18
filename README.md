@@ -9,10 +9,9 @@ A Towerfall mod that uses a modified version of the [Bartizan](https://github.co
 * 3v3 in team deathmatch
 
 # Installing the mod (for non-developers on Windows)
-IMPORTANT: Please backup your entire towerfall folder before following the steps below:
-* Copy the contents of the Pre-Built folder into the root of the Towerfall folder. This includes replacing the savefile (not necessary if you already have 8 characters unlocked in-game)
-* Merge the Content folder of this Repo with the Content folder of Towerfall (this is to install the patched levels and atlas file)
-* (Optional, Darkworld only) Do the same for the DarkWorldContent folder
+IMPORTANT: Please backup your entire TowerFall folder before following the steps below:
+* Copy the contents of the Pre-Built folder into the root of the Towerfall folder, replacing all files when requested. 
+* If you do not have the DarkWorld Expansion, delete the DarkWorldContent folder.
 * Run Patcher.exe in your TowerFall folder. There should be no errors and the TowerFall folder should now have a new file called TowerFall8Player.exe
 * (Steam Version Only) Rename TowerFall.exe to TowerFallOrig.exe and TowerFall8Player.exe to TowerFall.exe
 * Enjoy!
@@ -35,8 +34,6 @@ If everything is setup correctly, you should be able to just run Create8PlayerMo
 # Known Issues / Limitations
 * The Amaranth and Cataclysm are not currently patched (Only one level half-works to prevent the game from crashing).
 * You cannot have 4 players on a team. Don't even try! The game will crash. You'll have to patch your own levels to make this work!
-* The text and awards are too large on the results screen. (this is tricky to fix because of the limitations of the modding framework / Mono.Cecil but I aim to fix it asap)
-* Same goes for the big color rectangles that appear when selecting characters
 * Some of the patched starting positions are a little broken but I've tried my hardest to space people out. It's the best I could do!
 * The code was cobbled together in a short period of time just to get things working. You're probably going to be rather confused by it! For the brave who want to understand what on earth the code is doing, I recommend decompiling TowerFall.exe using something like .Net Reflector, Telerik's JustDecompile or ILSpy. You should also check out the Bartizan github page as well. Also feel free to contact me with any questions and I'll try my best to answer them.
 

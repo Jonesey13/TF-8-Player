@@ -115,6 +115,7 @@ namespace Patcher
 		public static void Patch(string modModulePath)
 		{
 			var baseModule = ModuleDefinition.ReadModule("PatchedTowerFall.exe");
+
 			var modModule = ModuleDefinition.ReadModule(modModulePath);
 
 			Func<TypeReference, bool> patchType = (type) => {
@@ -133,14 +134,14 @@ namespace Patcher
 				{
 					return modType;
 				}
-				if (modType.IsArray)
+                if (modType.IsArray)
 				{
 					var type = mapType(((ArrayType)modType).ElementType);
 					return new ArrayType(type);
 				}
 				if (patchType(modType))
 					modType = modType.Resolve().BaseType;
-				return baseModule.Import(modType);
+                return baseModule.Import(modType);
 			};
 			Action<MethodReference, MethodReference> mapParams = (modMethod, method) => {
 				foreach (var param in modMethod.Parameters)
@@ -179,6 +180,8 @@ namespace Patcher
             MyVersusRoundResults.PatchModule(baseModule);
             CleanMyVersusMatchResults.CleanModule(baseModule);
             CleanMyVersusPlayerMatchResults.CleanModule(baseModule);
+            MyAwardInfo.PatchModule(baseModule);
+            VersusPlayerMatchResultsAssembly.PatchModule(baseModule);
 
             foreach (TypeDefinition modType in modModule.Types.SelectMany(CecilExtensions.AllNestedTypes))
 				if (patchType(modType))

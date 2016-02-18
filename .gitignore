@@ -8,5 +8,5 @@ packages/
 *.xml
 *.manifest
 !Pre-Built/*
-!Content/Atlas/*
+!Pre-Built/Content/Atlas/*
 *.pdb
