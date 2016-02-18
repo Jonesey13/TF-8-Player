@@ -20,7 +20,7 @@ IMPORTANT: Please backup your entire TowerFall folder before following the steps
 The solution has two build configurations: MakeReferenceImage and Create8PlayerMod. MakeReferenceImage is used to setup the solution and should only need to be run once (following the steps below). Create8PlayerMod should only be run when the references for the Mod project are setup correctly.
 
 First we need to get MakeReferenceImage working:
-* First add Mono.Cecil as a reference for Patcher using "Manage NuGet Packages". Select version number 9.4.0 of Mono.Cecil (this is very important!)
+* First add Mono.Cecil as a reference for Patcher using "Manage NuGet Packages".
 * Copy Towerfall.exe into the root of the solution
 * Run the build configuration named MakeReferenceImage, this should build TowerFallReference.exe
 
