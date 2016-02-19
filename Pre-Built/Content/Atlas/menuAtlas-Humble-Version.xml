@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- Created with TexturePacker http://www.codeandweb.com/texturepacker-->
-<!-- $TexturePacker:SmartUpdate:cbbe0c4ad7b529ee3d13e4a49d736896:0a3ac83a6779986a77b61714d6ff54c5:1842d4c283b1328774665415d360db10$ -->
+<!-- $TexturePacker:SmartUpdate:68aa0e801d0acd527f1c1f73f9498eff:335283e47b8f78a1fb0e70ff9391515d:1842d4c283b1328774665415d360db10$ -->
 <TextureAtlas imagePath="menuAtlas.png">
     <SubTexture name="GoldenArrow" x="1618" y="729" width="70" height="70"/>
     <SubTexture name="archivesButton" x="841" y="706" width="32" height="32"/>
@@ -92,12 +92,12 @@
     <SubTexture name="awards/tripleKill" x="1984" y="906" width="48" height="14"/>
     <SubTexture name="awards/turncloakAward" x="1934" y="922" width="48" height="14"/>
     <SubTexture name="awards/usurperAward" x="1984" y="922" width="48" height="14"/>
-    <SubTexture name="awards/vendettaAward" x="1933" y="938" width="48" height="14"/>
-    <SubTexture name="awards/webofLiesAward" x="1867" y="964" width="48" height="14"/>
-    <SubTexture name="awards/whoNeedsArrows" x="1983" y="938" width="48" height="14"/>
-    <SubTexture name="awards/williamTellAward" x="1933" y="954" width="48" height="14"/>
-    <SubTexture name="awards/worstAccounting" x="1867" y="980" width="48" height="14"/>
-    <SubTexture name="awards/xRayVisionAward" x="1983" y="954" width="48" height="14"/>
+    <SubTexture name="awards/vendettaAward" x="1668" y="1264" width="48" height="14"/>
+    <SubTexture name="awards/webofLiesAward" x="1713" y="1204" width="48" height="14"/>
+    <SubTexture name="awards/whoNeedsArrows" x="1713" y="1220" width="48" height="14"/>
+    <SubTexture name="awards/williamTellAward" x="1713" y="1236" width="48" height="14"/>
+    <SubTexture name="awards/worstAccounting" x="1748" y="1155" width="48" height="14"/>
+    <SubTexture name="awards/xRayVisionAward" x="1748" y="1171" width="48" height="14"/>
     <SubTexture name="bladeButton" x="1900" y="692" width="100" height="18"/>
     <SubTexture name="bossHud/hudAnimHit" x="78" y="1987" width="50" height="40"/>
     <SubTexture name="bossHud/hudBottom" x="1196" y="1074" width="200" height="8"/>
@@ -161,22 +161,22 @@
     <SubTexture name="controls/keyboard/D7" x="1464" y="876" width="12" height="14"/>
     <SubTexture name="controls/keyboard/D8" x="1464" y="892" width="12" height="14"/>
     <SubTexture name="controls/keyboard/D9" x="1464" y="908" width="12" height="14"/>
-    <SubTexture name="controls/keyboard/Down" x="1573" y="873" width="12" height="13"/>
+    <SubTexture name="controls/keyboard/Down" x="1545" y="873" width="12" height="13"/>
     <SubTexture name="controls/keyboard/E" x="1464" y="924" width="12" height="14"/>
     <SubTexture name="controls/keyboard/Enter" x="1357" y="812" width="28" height="14"/>
     <SubTexture name="controls/keyboard/F" x="1464" y="940" width="12" height="14"/>
-    <SubTexture name="controls/keyboard/G" x="2034" y="890" width="12" height="14"/>
-    <SubTexture name="controls/keyboard/H" x="2034" y="906" width="12" height="14"/>
-    <SubTexture name="controls/keyboard/I" x="1903" y="925" width="12" height="14"/>
-    <SubTexture name="controls/keyboard/J" x="1903" y="941" width="12" height="14"/>
-    <SubTexture name="controls/keyboard/K" x="2034" y="922" width="12" height="14"/>
-    <SubTexture name="controls/keyboard/L" x="2033" y="938" width="12" height="14"/>
-    <SubTexture name="controls/keyboard/Left" x="1768" y="868" width="12" height="13"/>
+    <SubTexture name="controls/keyboard/G" x="1559" y="869" width="12" height="14"/>
+    <SubTexture name="controls/keyboard/H" x="2034" y="890" width="12" height="14"/>
+    <SubTexture name="controls/keyboard/I" x="2034" y="906" width="12" height="14"/>
+    <SubTexture name="controls/keyboard/J" x="2034" y="922" width="12" height="14"/>
+    <SubTexture name="controls/keyboard/K" x="1812" y="1047" width="12" height="14"/>
+    <SubTexture name="controls/keyboard/L" x="1826" y="1047" width="12" height="14"/>
+    <SubTexture name="controls/keyboard/Left" x="1573" y="873" width="12" height="13"/>
     <SubTexture name="controls/keyboard/LeftAlt" x="552" y="1209" width="21" height="14"/>
     <SubTexture name="controls/keyboard/LeftControl" x="552" y="1225" width="21" height="14"/>
     <SubTexture name="controls/keyboard/LeftShift" x="1357" y="828" width="28" height="14"/>
-    <SubTexture name="controls/keyboard/M" x="2033" y="954" width="12" height="14"/>
-    <SubTexture name="controls/keyboard/N" x="2033" y="1018" width="12" height="14"/>
+    <SubTexture name="controls/keyboard/M" x="1921" y="1018" width="12" height="14"/>
+    <SubTexture name="controls/keyboard/N" x="1935" y="1018" width="12" height="14"/>
     <SubTexture name="controls/keyboard/NumPad0" x="1579" y="761" width="12" height="14"/>
     <SubTexture name="controls/keyboard/NumPad1" x="1579" y="777" width="12" height="14"/>
     <SubTexture name="controls/keyboard/NumPad2" x="1579" y="793" width="12" height="14"/>
@@ -187,38 +187,38 @@
     <SubTexture name="controls/keyboard/NumPad7" x="1464" y="876" width="12" height="14"/>
     <SubTexture name="controls/keyboard/NumPad8" x="1464" y="892" width="12" height="14"/>
     <SubTexture name="controls/keyboard/NumPad9" x="1464" y="908" width="12" height="14"/>
-    <SubTexture name="controls/keyboard/O" x="1876" y="1076" width="12" height="14"/>
-    <SubTexture name="controls/keyboard/OemCloseBrackets" x="1805" y="1079" width="12" height="14"/>
-    <SubTexture name="controls/keyboard/OemComma" x="1789" y="1083" width="12" height="14"/>
-    <SubTexture name="controls/keyboard/OemMinus" x="1819" y="1079" width="12" height="14"/>
-    <SubTexture name="controls/keyboard/OemOpenBrackets" x="1924" y="1050" width="12" height="14"/>
-    <SubTexture name="controls/keyboard/OemPeriod" x="1938" y="1050" width="12" height="14"/>
-    <SubTexture name="controls/keyboard/OemPipe" x="1952" y="1050" width="12" height="14"/>
-    <SubTexture name="controls/keyboard/OemPlus" x="1966" y="1050" width="12" height="14"/>
-    <SubTexture name="controls/keyboard/OemQuestion" x="1980" y="1050" width="12" height="14"/>
-    <SubTexture name="controls/keyboard/OemQuotes" x="1994" y="1050" width="12" height="14"/>
-    <SubTexture name="controls/keyboard/OemSemicolon" x="2008" y="1050" width="12" height="14"/>
-    <SubTexture name="controls/keyboard/P" x="2022" y="1050" width="12" height="14"/>
-    <SubTexture name="controls/keyboard/Q" x="1908" y="1066" width="12" height="14"/>
-    <SubTexture name="controls/keyboard/R" x="1890" y="1077" width="12" height="14"/>
-    <SubTexture name="controls/keyboard/Right" x="1782" y="868" width="12" height="13"/>
+    <SubTexture name="controls/keyboard/O" x="1949" y="1018" width="12" height="14"/>
+    <SubTexture name="controls/keyboard/OemCloseBrackets" x="1963" y="1018" width="12" height="14"/>
+    <SubTexture name="controls/keyboard/OemComma" x="1977" y="1018" width="12" height="14"/>
+    <SubTexture name="controls/keyboard/OemMinus" x="1991" y="1018" width="12" height="14"/>
+    <SubTexture name="controls/keyboard/OemOpenBrackets" x="2005" y="1018" width="12" height="14"/>
+    <SubTexture name="controls/keyboard/OemPeriod" x="2019" y="1018" width="12" height="14"/>
+    <SubTexture name="controls/keyboard/OemPipe" x="2033" y="1018" width="12" height="14"/>
+    <SubTexture name="controls/keyboard/OemPlus" x="1892" y="1034" width="12" height="14"/>
+    <SubTexture name="controls/keyboard/OemQuestion" x="1876" y="1045" width="12" height="14"/>
+    <SubTexture name="controls/keyboard/OemQuotes" x="1840" y="1053" width="12" height="14"/>
+    <SubTexture name="controls/keyboard/OemSemicolon" x="1854" y="1053" width="12" height="14"/>
+    <SubTexture name="controls/keyboard/P" x="1812" y="1063" width="12" height="14"/>
+    <SubTexture name="controls/keyboard/Q" x="1826" y="1063" width="12" height="14"/>
+    <SubTexture name="controls/keyboard/R" x="1906" y="1034" width="12" height="14"/>
+    <SubTexture name="controls/keyboard/Right" x="1768" y="868" width="12" height="13"/>
     <SubTexture name="controls/keyboard/RightAlt" x="552" y="1209" width="21" height="14"/>
     <SubTexture name="controls/keyboard/RightControl" x="552" y="1225" width="21" height="14"/>
     <SubTexture name="controls/keyboard/RightShift" x="1357" y="828" width="28" height="14"/>
-    <SubTexture name="controls/keyboard/S" x="1833" y="1092" width="12" height="14"/>
-    <SubTexture name="controls/keyboard/Space" x="1933" y="970" width="48" height="14"/>
-    <SubTexture name="controls/keyboard/T" x="1803" y="1095" width="12" height="14"/>
+    <SubTexture name="controls/keyboard/S" x="1920" y="1034" width="12" height="14"/>
+    <SubTexture name="controls/keyboard/Space" x="1748" y="1187" width="48" height="14"/>
+    <SubTexture name="controls/keyboard/T" x="1934" y="1034" width="12" height="14"/>
     <SubTexture name="controls/keyboard/Tab" x="552" y="1241" width="21" height="14"/>
-    <SubTexture name="controls/keyboard/U" x="1789" y="1099" width="12" height="14"/>
-    <SubTexture name="controls/keyboard/Up" x="1796" y="868" width="12" height="13"/>
-    <SubTexture name="controls/keyboard/V" x="1817" y="1095" width="12" height="14"/>
-    <SubTexture name="controls/keyboard/W" x="1847" y="1092" width="12" height="14"/>
-    <SubTexture name="controls/keyboard/X" x="1861" y="1092" width="12" height="14"/>
-    <SubTexture name="controls/keyboard/Y" x="1875" y="1092" width="12" height="14"/>
-    <SubTexture name="controls/keyboard/Z" x="1922" y="1066" width="12" height="14"/>
+    <SubTexture name="controls/keyboard/U" x="1948" y="1034" width="12" height="14"/>
+    <SubTexture name="controls/keyboard/Up" x="1782" y="868" width="12" height="13"/>
+    <SubTexture name="controls/keyboard/V" x="1962" y="1034" width="12" height="14"/>
+    <SubTexture name="controls/keyboard/W" x="1976" y="1034" width="12" height="14"/>
+    <SubTexture name="controls/keyboard/X" x="1990" y="1034" width="12" height="14"/>
+    <SubTexture name="controls/keyboard/Y" x="2004" y="1034" width="12" height="14"/>
+    <SubTexture name="controls/keyboard/Z" x="2018" y="1034" width="12" height="14"/>
     <SubTexture name="controls/keyboard/arrows" x="2002" y="480" width="38" height="29"/>
     <SubTexture name="controls/keyboard/icon" x="1545" y="849" width="26" height="18"/>
-    <SubTexture name="controls/keyboard/undefined" x="1936" y="1066" width="12" height="14"/>
+    <SubTexture name="controls/keyboard/undefined" x="2032" y="1034" width="12" height="14"/>
     <SubTexture name="controls/noButton" x="1684" y="869" width="12" height="12"/>
     <SubTexture name="controls/none" x="1698" y="869" width="12" height="12"/>
     <SubTexture name="controls/ouya/alt" x="1712" y="869" width="12" height="12"/>
@@ -230,29 +230,23 @@
     <SubTexture name="controls/ouya/icon3" x="1541" y="1144" width="26" height="18"/>
     <SubTexture name="controls/ouya/icon4" x="1569" y="1124" width="26" height="18"/>
     <SubTexture name="controls/ouya/move" x="20" y="2030" width="16" height="16"/>
-    <SubTexture name="controls/ouya/replaySkip" x="1810" y="868" width="12" height="12"/>
-    <SubTexture name="controls/ouya/shoot" x="1950" y="1066" width="12" height="12"/>
+    <SubTexture name="controls/ouya/replaySkip" x="1796" y="868" width="12" height="12"/>
+    <SubTexture name="controls/ouya/shoot" x="1810" y="868" width="12" height="12"/>
     <SubTexture name="controls/ouya/start" x="38" y="2030" width="16" height="16"/>
     <SubTexture name="controls/snes/a" x="1103" y="1860" width="14" height="14"/>
     <SubTexture name="controls/snes/b" x="1103" y="1876" width="14" height="14"/>
     <SubTexture name="controls/snes/dpad" x="56" y="2030" width="16" height="16"/>
-    <SubTexture name="controls/snes/l" x="1964" y="1066" width="12" height="12"/>
+    <SubTexture name="controls/snes/l" x="1890" y="1050" width="12" height="12"/>
     <SubTexture name="controls/snes/player1" x="1766" y="794" width="26" height="18"/>
     <SubTexture name="controls/snes/player2" x="1794" y="794" width="26" height="18"/>
     <SubTexture name="controls/snes/player3" x="1569" y="1144" width="26" height="18"/>
     <SubTexture name="controls/snes/player4" x="1597" y="1124" width="26" height="18"/>
-    <SubTexture name="controls/snes/r" x="1978" y="1066" width="12" height="12"/>
+    <SubTexture name="controls/snes/r" x="1868" y="1061" width="12" height="12"/>
     <SubTexture name="controls/snes/select" x="562" y="1136" width="12" height="17"/>
-    <SubTexture name="controls/snes/start" x="1992" y="1066" width="12" height="12"/>
+    <SubTexture name="controls/snes/start" x="1840" y="1069" width="12" height="12"/>
     <SubTexture name="controls/snes/x" x="1103" y="1892" width="14" height="14"/>
     <SubTexture name="controls/snes/y" x="1103" y="1934" width="14" height="14"/>
     <SubTexture name="controls/unknownButton" x="1684" y="869" width="12" height="12"/>
-    <SubTexture name="controls/vita/L" x="2006" y="1066" width="12" height="12"/>
-    <SubTexture name="controls/vita/R" x="2020" y="1066" width="12" height="12"/>
-    <SubTexture name="controls/vita/player1" x="1545" y="869" width="26" height="11"/>
-    <SubTexture name="controls/vita/player2" x="1875" y="925" width="26" height="11"/>
-    <SubTexture name="controls/vita/player3" x="1875" y="938" width="26" height="11"/>
-    <SubTexture name="controls/vita/player4" x="1867" y="951" width="26" height="11"/>
     <SubTexture name="controls/xb360/a" x="1103" y="1950" width="14" height="14"/>
     <SubTexture name="controls/xb360/b" x="1103" y="1966" width="14" height="14"/>
     <SubTexture name="controls/xb360/lt" x="1601" y="1006" width="12" height="12"/>
@@ -612,98 +606,98 @@
     <SubTexture name="variants/darkPortals" x="1918" y="885" width="14" height="14"/>
     <SubTexture name="variants/disableAll" x="1918" y="901" width="14" height="14"/>
     <SubTexture name="variants/doubleJumping" x="1918" y="917" width="14" height="14"/>
-    <SubTexture name="variants/encumbrance" x="1917" y="933" width="14" height="14"/>
-    <SubTexture name="variants/explodingCorpses" x="1917" y="949" width="14" height="14"/>
-    <SubTexture name="variants/freeAiming" x="1917" y="965" width="14" height="14"/>
-    <SubTexture name="variants/gunnStyle" x="1917" y="981" width="14" height="14"/>
-    <SubTexture name="variants/ignoreTowerItemSet" x="1867" y="996" width="14" height="14"/>
-    <SubTexture name="variants/infiniteBrambles" x="1883" y="996" width="14" height="14"/>
-    <SubTexture name="variants/infiniteDrills" x="1899" y="996" width="14" height="14"/>
-    <SubTexture name="variants/infiniteLasers" x="1825" y="999" width="14" height="14"/>
-    <SubTexture name="variants/maxArrows" x="1841" y="999" width="14" height="14"/>
-    <SubTexture name="variants/maxTreasure" x="1983" y="970" width="14" height="14"/>
+    <SubTexture name="variants/encumbrance" x="1875" y="925" width="14" height="14"/>
+    <SubTexture name="variants/explodingCorpses" x="1891" y="925" width="14" height="14"/>
+    <SubTexture name="variants/freeAiming" x="1907" y="933" width="14" height="14"/>
+    <SubTexture name="variants/gunnStyle" x="1875" y="941" width="14" height="14"/>
+    <SubTexture name="variants/ignoreTowerItemSet" x="1891" y="941" width="14" height="14"/>
+    <SubTexture name="variants/infiniteBrambles" x="1753" y="1119" width="14" height="14"/>
+    <SubTexture name="variants/infiniteDrills" x="1753" y="1135" width="14" height="14"/>
+    <SubTexture name="variants/infiniteLasers" x="1769" y="1119" width="14" height="14"/>
+    <SubTexture name="variants/maxArrows" x="1769" y="1135" width="14" height="14"/>
+    <SubTexture name="variants/maxTreasure" x="1785" y="1119" width="14" height="14"/>
     <SubTexture name="variants/newVariantsTag" x="1081" y="1922" width="26" height="10"/>
     <SubTexture name="variants/newVariantsTagSmall" x="2039" y="516" width="6" height="10"/>
-    <SubTexture name="variants/noArrows" x="1999" y="970" width="14" height="14"/>
-    <SubTexture name="variants/noAutobalance" x="2015" y="970" width="14" height="14"/>
-    <SubTexture name="variants/noBoltArrows" x="2031" y="970" width="14" height="14"/>
-    <SubTexture name="variants/noBomb" x="1668" y="1264" width="14" height="14"/>
+    <SubTexture name="variants/noArrows" x="1785" y="1135" width="14" height="14"/>
+    <SubTexture name="variants/noAutobalance" x="1789" y="1067" width="14" height="14"/>
+    <SubTexture name="variants/noBoltArrows" x="1789" y="1083" width="14" height="14"/>
+    <SubTexture name="variants/noBomb" x="1789" y="1099" width="14" height="14"/>
     <SubTexture name="variants/noBombArrows" x="1668" y="1280" width="14" height="14"/>
     <SubTexture name="variants/noBrambleArrows" x="1668" y="1296" width="14" height="14"/>
     <SubTexture name="variants/noDarkOrb" x="1668" y="1312" width="14" height="14"/>
     <SubTexture name="variants/noDodging" x="1668" y="1328" width="14" height="14"/>
-    <SubTexture name="variants/noDrillArrows" x="1684" y="1264" width="14" height="14"/>
-    <SubTexture name="variants/noExtraArrows" x="1684" y="1280" width="14" height="14"/>
-    <SubTexture name="variants/noFeatherArrows" x="1684" y="1296" width="14" height="14"/>
-    <SubTexture name="variants/noFriendlyFire" x="1684" y="1312" width="14" height="14"/>
-    <SubTexture name="variants/noHazards" x="1684" y="1328" width="14" height="14"/>
-    <SubTexture name="variants/noLaserArrows" x="1700" y="1264" width="14" height="14"/>
-    <SubTexture name="variants/noLavaOrb" x="1713" y="1204" width="14" height="14"/>
-    <SubTexture name="variants/noLookingGlass" x="1713" y="1220" width="14" height="14"/>
-    <SubTexture name="variants/noPrismArrows" x="1713" y="1236" width="14" height="14"/>
-    <SubTexture name="variants/noPrismOrb" x="1700" y="1280" width="14" height="14"/>
-    <SubTexture name="variants/noQuivers" x="1700" y="1296" width="14" height="14"/>
-    <SubTexture name="variants/noSeekingArrows" x="1700" y="1312" width="14" height="14"/>
-    <SubTexture name="variants/noShield" x="1700" y="1328" width="14" height="14"/>
-    <SubTexture name="variants/noSlipping" x="1933" y="986" width="14" height="14"/>
-    <SubTexture name="variants/noSpaceOrb" x="1915" y="997" width="14" height="14"/>
-    <SubTexture name="variants/noSpeedBoots" x="1857" y="1012" width="14" height="14"/>
-    <SubTexture name="variants/noSuperBombArrows" x="1873" y="1012" width="14" height="14"/>
-    <SubTexture name="variants/noTimeLimit" x="1889" y="1012" width="14" height="14"/>
-    <SubTexture name="variants/noTimeOrb" x="1812" y="1015" width="14" height="14"/>
-    <SubTexture name="variants/noTreasure" x="1828" y="1015" width="14" height="14"/>
-    <SubTexture name="variants/noTriggerArrows" x="1949" y="986" width="14" height="14"/>
-    <SubTexture name="variants/noWings" x="1965" y="986" width="14" height="14"/>
-    <SubTexture name="variants/offsetWorld" x="1981" y="986" width="14" height="14"/>
+    <SubTexture name="variants/noDrillArrows" x="1684" y="1280" width="14" height="14"/>
+    <SubTexture name="variants/noExtraArrows" x="1684" y="1296" width="14" height="14"/>
+    <SubTexture name="variants/noFeatherArrows" x="1684" y="1312" width="14" height="14"/>
+    <SubTexture name="variants/noFriendlyFire" x="1684" y="1328" width="14" height="14"/>
+    <SubTexture name="variants/noHazards" x="1700" y="1280" width="14" height="14"/>
+    <SubTexture name="variants/noLaserArrows" x="1700" y="1296" width="14" height="14"/>
+    <SubTexture name="variants/noLavaOrb" x="1700" y="1312" width="14" height="14"/>
+    <SubTexture name="variants/noLookingGlass" x="1700" y="1328" width="14" height="14"/>
+    <SubTexture name="variants/noPrismArrows" x="1923" y="938" width="14" height="14"/>
+    <SubTexture name="variants/noPrismOrb" x="1907" y="949" width="14" height="14"/>
+    <SubTexture name="variants/noQuivers" x="1867" y="957" width="14" height="14"/>
+    <SubTexture name="variants/noSeekingArrows" x="1883" y="957" width="14" height="14"/>
+    <SubTexture name="variants/noShield" x="1939" y="938" width="14" height="14"/>
+    <SubTexture name="variants/noSlipping" x="1955" y="938" width="14" height="14"/>
+    <SubTexture name="variants/noSpaceOrb" x="1971" y="938" width="14" height="14"/>
+    <SubTexture name="variants/noSpeedBoots" x="1987" y="938" width="14" height="14"/>
+    <SubTexture name="variants/noSuperBombArrows" x="2003" y="938" width="14" height="14"/>
+    <SubTexture name="variants/noTimeLimit" x="2019" y="938" width="14" height="14"/>
+    <SubTexture name="variants/noTimeOrb" x="1923" y="954" width="14" height="14"/>
+    <SubTexture name="variants/noTreasure" x="1899" y="965" width="14" height="14"/>
+    <SubTexture name="variants/noTriggerArrows" x="1867" y="973" width="14" height="14"/>
+    <SubTexture name="variants/noWings" x="1883" y="973" width="14" height="14"/>
+    <SubTexture name="variants/offsetWorld" x="1939" y="954" width="14" height="14"/>
     <SubTexture name="variants/playerBanner" x="2038" y="565" width="6" height="9"/>
-    <SubTexture name="variants/presetOffA" x="1997" y="986" width="14" height="14"/>
-    <SubTexture name="variants/presetOffB" x="2013" y="986" width="14" height="14"/>
-    <SubTexture name="variants/presetOffC" x="2029" y="986" width="14" height="14"/>
-    <SubTexture name="variants/presetOffD" x="1931" y="1002" width="14" height="14"/>
-    <SubTexture name="variants/presetOffE" x="1905" y="1013" width="14" height="14"/>
-    <SubTexture name="variants/presetOnA" x="1844" y="1028" width="14" height="14"/>
-    <SubTexture name="variants/presetOnB" x="1812" y="1031" width="14" height="14"/>
-    <SubTexture name="variants/presetOnC" x="1828" y="1031" width="14" height="14"/>
-    <SubTexture name="variants/presetOnD" x="1860" y="1028" width="14" height="14"/>
-    <SubTexture name="variants/presetOnE" x="1876" y="1028" width="14" height="14"/>
-    <SubTexture name="variants/randomize" x="1947" y="1002" width="14" height="14"/>
-    <SubTexture name="variants/regeneratingArrows" x="1963" y="1002" width="14" height="14"/>
-    <SubTexture name="variants/regeneratingShields" x="1979" y="1002" width="14" height="14"/>
-    <SubTexture name="variants/returnAsGhosts" x="1995" y="1002" width="14" height="14"/>
-    <SubTexture name="variants/secretArrows" x="2011" y="1002" width="14" height="14"/>
-    <SubTexture name="variants/showDodgeCooldown" x="2027" y="1002" width="14" height="14"/>
-    <SubTexture name="variants/showTreasureSpawns" x="1921" y="1018" width="14" height="14"/>
-    <SubTexture name="variants/singleArrow" x="1892" y="1029" width="14" height="14"/>
-    <SubTexture name="variants/slipperyFloors" x="1844" y="1044" width="14" height="14"/>
-    <SubTexture name="variants/slowTime" x="1812" y="1047" width="14" height="14"/>
-    <SubTexture name="variants/smallQuivers" x="1828" y="1047" width="14" height="14"/>
-    <SubTexture name="variants/startInvisible" x="1860" y="1044" width="14" height="14"/>
-    <SubTexture name="variants/startWithBoltArrows" x="1876" y="1044" width="14" height="14"/>
-    <SubTexture name="variants/startWithBombArrows" x="1937" y="1018" width="14" height="14"/>
-    <SubTexture name="variants/startWithBrambleArrows" x="1953" y="1018" width="14" height="14"/>
-    <SubTexture name="variants/startWithDrillArrows" x="1969" y="1018" width="14" height="14"/>
-    <SubTexture name="variants/startWithFeatherArrows" x="1985" y="1018" width="14" height="14"/>
-    <SubTexture name="variants/startWithLaserArrows" x="2001" y="1018" width="14" height="14"/>
-    <SubTexture name="variants/startWithPrismArrows" x="2017" y="1018" width="14" height="14"/>
-    <SubTexture name="variants/startWithRandomArrows" x="1908" y="1034" width="14" height="14"/>
-    <SubTexture name="variants/startWithShields" x="1892" y="1045" width="14" height="14"/>
-    <SubTexture name="variants/startWithSpeedBoots" x="1844" y="1060" width="14" height="14"/>
-    <SubTexture name="variants/startWithSuperBombArrows" x="1812" y="1063" width="14" height="14"/>
-    <SubTexture name="variants/startWithToyArrows" x="1828" y="1063" width="14" height="14"/>
-    <SubTexture name="variants/startWithTriggerArrows" x="1789" y="1067" width="14" height="14"/>
-    <SubTexture name="variants/startWithWings" x="1860" y="1060" width="14" height="14"/>
-    <SubTexture name="variants/stealthArchers" x="1876" y="1060" width="14" height="14"/>
-    <SubTexture name="variants/suddenDeath" x="1924" y="1034" width="14" height="14"/>
-    <SubTexture name="variants/superDodging" x="1940" y="1034" width="14" height="14"/>
-    <SubTexture name="variants/superSeekingArrows" x="1956" y="1034" width="14" height="14"/>
-    <SubTexture name="variants/symmetricalTreasure" x="1972" y="1034" width="14" height="14"/>
-    <SubTexture name="variants/teamRevive" x="1988" y="1034" width="14" height="14"/>
-    <SubTexture name="variants/tournamentRules1v1" x="2004" y="1034" width="14" height="14"/>
-    <SubTexture name="variants/tournamentRules2v2" x="2020" y="1034" width="14" height="14"/>
-    <SubTexture name="variants/tournamentRulesFFA" x="1908" y="1050" width="14" height="14"/>
-    <SubTexture name="variants/treasureDraft" x="1892" y="1061" width="14" height="14"/>
-    <SubTexture name="variants/triggerCorpses" x="1844" y="1076" width="14" height="14"/>
-    <SubTexture name="variants/weakAutobalance" x="1860" y="1076" width="14" height="14"/>
+    <SubTexture name="variants/presetOffA" x="1955" y="954" width="14" height="14"/>
+    <SubTexture name="variants/presetOffB" x="1971" y="954" width="14" height="14"/>
+    <SubTexture name="variants/presetOffC" x="1987" y="954" width="14" height="14"/>
+    <SubTexture name="variants/presetOffD" x="2003" y="954" width="14" height="14"/>
+    <SubTexture name="variants/presetOffE" x="2019" y="954" width="14" height="14"/>
+    <SubTexture name="variants/presetOnA" x="1915" y="970" width="14" height="14"/>
+    <SubTexture name="variants/presetOnB" x="1899" y="981" width="14" height="14"/>
+    <SubTexture name="variants/presetOnC" x="1867" y="989" width="14" height="14"/>
+    <SubTexture name="variants/presetOnD" x="1883" y="989" width="14" height="14"/>
+    <SubTexture name="variants/presetOnE" x="1825" y="999" width="14" height="14"/>
+    <SubTexture name="variants/randomize" x="1841" y="999" width="14" height="14"/>
+    <SubTexture name="variants/regeneratingArrows" x="1931" y="970" width="14" height="14"/>
+    <SubTexture name="variants/regeneratingShields" x="1947" y="970" width="14" height="14"/>
+    <SubTexture name="variants/returnAsGhosts" x="1963" y="970" width="14" height="14"/>
+    <SubTexture name="variants/secretArrows" x="1979" y="970" width="14" height="14"/>
+    <SubTexture name="variants/showDodgeCooldown" x="1995" y="970" width="14" height="14"/>
+    <SubTexture name="variants/showTreasureSpawns" x="2011" y="970" width="14" height="14"/>
+    <SubTexture name="variants/singleArrow" x="2027" y="970" width="14" height="14"/>
+    <SubTexture name="variants/slipperyFloors" x="1915" y="986" width="14" height="14"/>
+    <SubTexture name="variants/slowTime" x="1899" y="997" width="14" height="14"/>
+    <SubTexture name="variants/smallQuivers" x="1857" y="1005" width="14" height="14"/>
+    <SubTexture name="variants/startInvisible" x="1873" y="1005" width="14" height="14"/>
+    <SubTexture name="variants/startWithBoltArrows" x="1812" y="1015" width="14" height="14"/>
+    <SubTexture name="variants/startWithBombArrows" x="1828" y="1015" width="14" height="14"/>
+    <SubTexture name="variants/startWithBrambleArrows" x="1931" y="986" width="14" height="14"/>
+    <SubTexture name="variants/startWithDrillArrows" x="1947" y="986" width="14" height="14"/>
+    <SubTexture name="variants/startWithFeatherArrows" x="1963" y="986" width="14" height="14"/>
+    <SubTexture name="variants/startWithLaserArrows" x="1979" y="986" width="14" height="14"/>
+    <SubTexture name="variants/startWithPrismArrows" x="1995" y="986" width="14" height="14"/>
+    <SubTexture name="variants/startWithRandomArrows" x="2011" y="986" width="14" height="14"/>
+    <SubTexture name="variants/startWithShields" x="2027" y="986" width="14" height="14"/>
+    <SubTexture name="variants/startWithSpeedBoots" x="1915" y="1002" width="14" height="14"/>
+    <SubTexture name="variants/startWithSuperBombArrows" x="1889" y="1013" width="14" height="14"/>
+    <SubTexture name="variants/startWithToyArrows" x="1844" y="1021" width="14" height="14"/>
+    <SubTexture name="variants/startWithTriggerArrows" x="1860" y="1021" width="14" height="14"/>
+    <SubTexture name="variants/startWithWings" x="1812" y="1031" width="14" height="14"/>
+    <SubTexture name="variants/stealthArchers" x="1828" y="1031" width="14" height="14"/>
+    <SubTexture name="variants/suddenDeath" x="1931" y="1002" width="14" height="14"/>
+    <SubTexture name="variants/superDodging" x="1947" y="1002" width="14" height="14"/>
+    <SubTexture name="variants/superSeekingArrows" x="1963" y="1002" width="14" height="14"/>
+    <SubTexture name="variants/symmetricalTreasure" x="1979" y="1002" width="14" height="14"/>
+    <SubTexture name="variants/teamRevive" x="1995" y="1002" width="14" height="14"/>
+    <SubTexture name="variants/tournamentRules1v1" x="2011" y="1002" width="14" height="14"/>
+    <SubTexture name="variants/tournamentRules2v2" x="2027" y="1002" width="14" height="14"/>
+    <SubTexture name="variants/tournamentRulesFFA" x="1905" y="1018" width="14" height="14"/>
+    <SubTexture name="variants/treasureDraft" x="1876" y="1029" width="14" height="14"/>
+    <SubTexture name="variants/triggerCorpses" x="1844" y="1037" width="14" height="14"/>
+    <SubTexture name="variants/weakAutobalance" x="1860" y="1037" width="14" height="14"/>
     <SubTexture name="versusResults/bg" x="476" y="1173" width="74" height="200"/>
     <SubTexture name="versusResults/winnerbg" x="2" y="1828" width="74" height="200"/>
     <SubTexture name="vortexLevelBlock" x="1138" y="1250" width="30" height="30"/>
