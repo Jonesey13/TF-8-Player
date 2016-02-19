@@ -12,7 +12,7 @@ A Towerfall mod that uses a modified version of the [Bartizan](https://github.co
 IMPORTANT: Please backup your entire TowerFall folder before following the steps below:
 * Copy the contents of the Pre-Built folder into the root of the Towerfall folder, replacing all files when requested. 
 * If you do not have the DarkWorld Expansion, delete the DarkWorldContent folder.
-* If you are using the (non-steam) Humble-free version, replace Content/Atlas/menuAtlas.xml with Content/Atlas/menuAtlas-Humble-Version.xml.
+* If you are using the Humble version, replace Content/Atlas/menuAtlas.xml with Content/Atlas/menuAtlas-Humble-Version.xml.
 * Run Patcher.exe in your TowerFall folder. There should be no errors and the TowerFall folder should now have a new file called TowerFall8Player.exe
 * (Steam Version Only) Rename TowerFall.exe to TowerFallOrig.exe and TowerFall8Player.exe to TowerFall.exe
 * Enjoy!
