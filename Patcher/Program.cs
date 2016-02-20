@@ -182,6 +182,7 @@ namespace Patcher
             CleanMyVersusPlayerMatchResults.CleanModule(baseModule);
             MyAwardInfo.PatchModule(baseModule);
             VersusPlayerMatchResultsAssembly.PatchModule(baseModule);
+            CleanMyVariantPerPlayer.CleanModule(baseModule);
 
             foreach (TypeDefinition modType in modModule.Types.SelectMany(CecilExtensions.AllNestedTypes))
 				if (patchType(modType))
@@ -224,7 +225,14 @@ namespace Patcher
 									var callee = (MethodReference)instr.Operand;
                                     if (callee.Name == "CallRealBase")
                                     {
-                                        var baseMethod = type.BaseType.Resolve().Methods.Single(m => m.Name == method.Name) as MethodReference;
+                                        MethodReference baseMethod;
+                                        try {
+                                            baseMethod = type.BaseType.Resolve().Methods.Single(m => m.Name == method.Name) as MethodReference;
+                                        }
+                                        catch
+                                        {
+                                            baseMethod = ((TypeDefinition)(type.BaseType)).BaseType.Resolve().Methods.Single(m => m.Name == method.Name) as MethodReference;
+                                        }
                                         amendments.Add(() => proc.InsertBefore(instr, proc.Create(OpCodes.Ldarg_0)));
                                         amendments.Add(() => proc.Replace(instr, proc.Create(OpCodes.Call, baseMethod)));
                                     }

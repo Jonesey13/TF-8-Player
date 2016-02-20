@@ -67,6 +67,8 @@
     <Compile Include="PressStartText.cs" />
     <Compile Include="RollcallElement.cs" />
     <Compile Include="TreasureSpawner.cs" />
+    <Compile Include="VariantPerPlayer.cs" />
+    <Compile Include="VariantToggle.cs" />
     <Compile Include="VersusMatchResults.cs" />
     <Compile Include="VersusPlayerMatchResults.cs" />
   </ItemGroup>

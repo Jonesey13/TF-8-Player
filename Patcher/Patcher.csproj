@@ -63,6 +63,7 @@
     <Compile Include="AwardInfo.cs" />
     <Compile Include="CleanMyVersusMatchResults.cs" />
     <Compile Include="CleanMyVersusPlayerMatchResults.cs" />
+    <Compile Include="CleanVariantPerPlayer.cs" />
     <Compile Include="MainMenu.cs" />
     <Compile Include="MenuButtons.cs" />
     <Compile Include="MenuInput.cs" />
