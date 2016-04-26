@@ -20,20 +20,24 @@ namespace Patcher
 
         public static void GetMethod(Instruction i, ILProcessor proc, ModuleDefinition baseModule)
         {
-            if (i.Offset == 165)
+            if (i.Operand is FieldReference 
+                && ((FieldReference)i.Operand).FullName.Contains("Monocle.Sprite`1<System.Int32> TowerFall.AwardInfo/<>c__DisplayClass")
+                && ((FieldReference)i.Operand).FullName.Contains("::sprite"))
             {
                 Stored = Instruction.Create(OpCodes.Ldfld, i.Operand as FieldReference);
             }
 
-            if (i.Offset == 175)
+            if (i.OpCode == OpCodes.Callvirt && i.Next.OpCode != OpCodes.Br_S
+                && ((MethodReference)i.Operand).FullName == "System.Void Monocle.Sprite`1<System.Int32>::Add(T,System.Int32)")
             {
                 TypeDefinition graphicsComponent = baseModule.GetType("Monocle.GraphicsComponent");
                  var fieldReference = graphicsComponent.Fields.Single(f => f.Name == "Zoom");
                 var instr = Instruction.Create(OpCodes.Stfld, fieldReference);
-                proc.InsertBefore(i, proc.Create(OpCodes.Ldloc_3));
-                proc.InsertBefore(i, Stored);
-                proc.InsertBefore(i, proc.Create(OpCodes.Ldc_R4, (float)0.7));
-                proc.InsertBefore(i, instr);
+                var ldinstr = Instruction.Create(i.Next.OpCode);
+                proc.InsertAfter(i, instr);
+                proc.InsertAfter(i, proc.Create(OpCodes.Ldc_R4, (float)0.7));
+                proc.InsertAfter(i, Stored);
+                proc.InsertAfter(i, ldinstr);
             }
         }
     }

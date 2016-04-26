@@ -36,7 +36,7 @@ namespace Patcher
 
         public static void GetMethod(Instruction i)
         {
-            if (i.Offset == 908)
+            if (i.Operand is MethodReference && ((MethodReference)i.Operand).FullName == "T Monocle.Scene::Add<TowerFall.VersusPlayerMatchResults>(T)")
             {
                 Stored1 = Instruction.Create(OpCodes.Callvirt, i.Operand as MethodReference);
             }
@@ -44,9 +44,9 @@ namespace Patcher
 
         public static void ChangeMethod(Instruction i)
         {
-            if (i.Offset == 969)
+            if (i.OpCode == OpCodes.Pop)
             {
-                i.Operand = Stored1.Operand;
+                i.Previous.Operand = Stored1.Operand;
             }
         }
     }

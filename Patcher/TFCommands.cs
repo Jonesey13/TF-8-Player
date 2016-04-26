@@ -10,7 +10,15 @@ namespace Patcher
         public static void PatchModule(ModuleDefinition baseModule)
         {
             var type = baseModule.AllNestedTypes().Single(t => t.FullName == "TowerFall.TFCommands");
-            var method = type.Methods.Single(m => m.FullName == "System.Void TowerFall.TFCommands::<Init>b__4(System.String[])");
+            Mono.Cecil.MethodDefinition method;
+            try {
+                method = type.Methods.Single(m => m.FullName.Contains("System.Void TowerFall.TFCommands::<Init>b__4(System.String[])"));
+            }
+            catch (System.InvalidOperationException)
+            {
+                var subType = type.NestedTypes.Single(st => st.FullName == "TowerFall.TFCommands/<>c");
+                method = subType.Methods.Single(m => m.FullName.Contains("System.Void TowerFall.TFCommands/<>c::<Init>b__0_4(System.String[])"));
+            }
             var instructions = method.Body.Instructions.ToList();
             instructions.ForEach(i => ChangeFoursToEights(i));
         }

@@ -13,8 +13,8 @@ namespace Patcher
             var method = type.Methods.Single(m => m.FullName == "System.Collections.IEnumerator TowerFall.VersusRoundResults::Sequence(System.Collections.Generic.List`1<TowerFall.EventLog>)");
             var instructions = method.Body.Instructions.ToList();
             instructions.ForEach(i => ChangeThreesToSevens(i));
-            var subType = type.NestedTypes.Single(st => st.FullName == "TowerFall.VersusRoundResults/<Sequence>d__3");
-            method = subType.Methods.Single(m => m.FullName == "System.Boolean TowerFall.VersusRoundResults/<Sequence>d__3::MoveNext()");
+            var subType = type.NestedTypes.Single(st => st.FullName.Contains("TowerFall.VersusRoundResults/<Sequence>"));
+            method = subType.Methods.Single(m => m.FullName.Contains("::MoveNext()"));
             instructions = method.Body.Instructions.ToList();
             instructions.ForEach(i => ChangeThreeToSeven(i));
         }
@@ -29,7 +29,7 @@ namespace Patcher
 
         public static void ChangeThreeToSeven(Instruction i)
         {
-            if (i.OpCode.Code == Code.Ldc_I4_3 && i.Offset == 1019 )
+            if (i.OpCode.Code == Code.Ldc_I4_3 && i.Previous.OpCode == OpCodes.Stloc_S && i.Next.OpCode == OpCodes.Stloc_S)
             {
                 i.OpCode = OpCodes.Ldc_I4_7;
             }

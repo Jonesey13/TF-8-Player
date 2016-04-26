@@ -17,8 +17,11 @@ namespace Patcher
 
         public static void ChangeFoursToEights(Instruction i)
         {
-            var ILLines = new List<int> { 223, 455 };
-            if (i.OpCode.Code == Code.Ldc_I4_4 && ILLines.Any(num => num ==i.Offset))
+            var iPrev = i.Previous;
+            if (i.OpCode.Code == Code.Ldc_I4_4 
+                && iPrev.OpCode == OpCodes.Callvirt
+                && iPrev.Operand is MethodReference
+                && !(((MethodReference)iPrev.Operand).FullName == "System.Int32 System.Collections.Generic.List`1<Monocle.MInput/XGamepadData>::get_Count()"))
             {
                 i.OpCode = OpCodes.Ldc_I4_8;
             }
