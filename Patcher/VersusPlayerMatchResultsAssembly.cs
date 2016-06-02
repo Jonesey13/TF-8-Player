@@ -7,11 +7,9 @@ namespace Patcher
 {
     public static class VersusPlayerMatchResultsAssembly
     {
-        static Instruction StoredKills;
-        static Instruction StoredDeaths;
-        static Instruction StoredSelf1;
-        static Instruction StoredSelf2;
+        static Instruction StoredSelf;
         static Instruction StoredAward;
+        static string selfClassName;
 
 
         public static void PatchModule(ModuleDefinition baseModule)
@@ -21,29 +19,23 @@ namespace Patcher
             var method = subType.Methods.Single(m => m.FullName.Contains("::MoveNext()"));
             var instructions = method.Body.Instructions.ToList();
             var proc = method.Body.GetILProcessor();
+            instructions.ForEach(i => GetMethodPrelim(i, proc, baseModule));
             instructions.ForEach(i => GetMethod(i, proc, baseModule));
+        }
+
+        public static void GetMethodPrelim(Instruction i, ILProcessor proc, ModuleDefinition baseModule)
+        {
+            if (i.Operand is FieldReference && ((FieldReference)i.Operand).FullName.Contains("::selfText"))
+            {
+                selfClassName = ((FieldReference)i.Operand).FullName.Split('/')[1].Split(':')[0];
+            }
         }
 
         public static void GetMethod(Instruction i, ILProcessor proc, ModuleDefinition baseModule)
         {
-            if (i.Operand is FieldReference && ((FieldReference)i.Operand).FullName.Contains("::killsText"))
+            if (selfClassName != null && i.Operand is VariableDefinition && ((VariableDefinition)i.Operand).VariableType.FullName.Contains("TowerFall.VersusPlayerMatchResults/" + selfClassName))
             {
-                StoredKills = Instruction.Create(OpCodes.Ldfld, i.Operand as FieldReference);
-            }
-
-            if (i.Operand is FieldReference && ((FieldReference)i.Operand).FullName.Contains("::deathsText"))
-            {
-                StoredDeaths = Instruction.Create(OpCodes.Ldfld, i.Operand as FieldReference);
-            }
-
-            if (i.Operand is VariableDefinition && ((VariableDefinition)i.Operand).VariableType.FullName.Contains("TowerFall.VersusPlayerMatchResults/<>c"))
-            {
-                StoredSelf1 = Instruction.Create(OpCodes.Ldloc_S, i.Operand as VariableDefinition);
-            }
-
-            if (i.Operand is FieldReference && ((FieldReference)i.Operand).FullName.Contains("::selfText"))
-            {
-                StoredSelf2 = Instruction.Create(OpCodes.Ldfld, i.Operand as FieldReference);
+                StoredSelf = Instruction.Create(OpCodes.Ldloc_S, i.Operand as VariableDefinition);
             }
 
             if (i.Operand is VariableDefinition && ((VariableDefinition)i.Operand).VariableType.FullName.Contains("Monocle.OutlineText"))
@@ -54,36 +46,41 @@ namespace Patcher
             if (i.OpCode == OpCodes.Stfld && ((FieldReference)i.Operand).FullName.Contains("::killsText"))
             {
                 TypeDefinition graphicsComponent = baseModule.GetType("Monocle.GraphicsComponent");
-                var fieldReference = graphicsComponent.Fields.Single(f => f.Name == "Zoom");
-                var instr = Instruction.Create(OpCodes.Stfld, fieldReference);
+                var textLdfldInstr = Instruction.Create(OpCodes.Ldfld, i.Operand as FieldReference);
+                var zoomFieldReference = graphicsComponent.Fields.Single(f => f.Name == "Zoom");
+                var instr = Instruction.Create(OpCodes.Stfld, zoomFieldReference);
                 var ldinstr = i.Next;
                 proc.InsertAfter(i, instr);
                 proc.InsertAfter(i, proc.Create(OpCodes.Ldc_R4, (float)0.6));
-                proc.InsertAfter(i, StoredKills);
+                proc.InsertAfter(i, textLdfldInstr);
                 proc.InsertAfter(i, ldinstr);
             }
 
             if (i.OpCode == OpCodes.Stfld && ((FieldReference)i.Operand).FullName.Contains("::deathsText"))
             {
+                var textLdfldInstr = Instruction.Create(OpCodes.Ldfld, i.Operand as FieldReference);
                 TypeDefinition graphicsComponent = baseModule.GetType("Monocle.GraphicsComponent");
-                var fieldReference = graphicsComponent.Fields.Single(f => f.Name == "Zoom");
-                var instr = Instruction.Create(OpCodes.Stfld, fieldReference);
+                var zoomFieldReference = graphicsComponent.Fields.Single(f => f.Name == "Zoom");
+                var instr = Instruction.Create(OpCodes.Stfld, zoomFieldReference);
                 var ldinstr = i.Next;
                 proc.InsertAfter(i, instr);
                 proc.InsertAfter(i, proc.Create(OpCodes.Ldc_R4, (float)0.6));
-                proc.InsertAfter(i, StoredDeaths);
+                proc.InsertAfter(i, textLdfldInstr);
                 proc.InsertAfter(i, ldinstr);
             }
 
-            if (i.OpCode == OpCodes.Stfld && ((FieldReference)i.Operand).FullName.Contains("::selfText"))
+            if (i.OpCode == OpCodes.Ldfld && ((FieldReference)i.Operand).FullName.Contains("::selfText")
+                && i?.Next.OpCode == OpCodes.Call && ((MethodReference)i.Next.Operand).FullName.Contains("::get_Transparent")
+                && i?.Next?.Next.OpCode == OpCodes.Stfld && ((FieldReference)i.Next.Next.Operand).FullName.Contains("::OutlineColor"))
             {
                 TypeDefinition graphicsComponent = baseModule.GetType("Monocle.GraphicsComponent");
-                var fieldReference = graphicsComponent.Fields.Single(f => f.Name == "Zoom");
-                var instr = Instruction.Create(OpCodes.Stfld, fieldReference);
-                proc.InsertAfter(i, instr);
+                var zoomFieldReference = graphicsComponent.Fields.Single(f => f.Name == "Zoom");
+                var ldfldinstr = Instruction.Create(OpCodes.Ldfld, i.Operand as FieldReference);
+                var stfldinstr = Instruction.Create(OpCodes.Stfld, zoomFieldReference);
+                proc.InsertAfter(i, stfldinstr);
                 proc.InsertAfter(i, proc.Create(OpCodes.Ldc_R4, (float)0.6));
-                proc.InsertAfter(i, StoredSelf2);
-                proc.InsertAfter(i, StoredSelf1);
+                proc.InsertAfter(i, ldfldinstr);
+                proc.InsertAfter(i, StoredSelf);
             }
 
             if (i.OpCode == OpCodes.Stloc_S && i.Previous.OpCode == OpCodes.Newobj 
