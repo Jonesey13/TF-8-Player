@@ -1,4 +1,4 @@
-<level width="320" height="240" Darkness="0.5" WrapMode="Both" CanUnlockMoonstone="False" CanUnlockPurple="False" MiasmaH="False">
+<level CanUnlockMoonstone="False" CanUnlockPurple="False" Darkness="0.5" MiasmaH="False" WrapMode="Both" height="240" width="320">
   <BG exportMode="Bitstring">00000111111111100111111111100000
 00000111111111100111111111100000
 00111111111111100111111111111100
@@ -23,7 +23,7 @@
 00000000111111111111111100000000
 00000000111111111111111100000000
 00000000001111111111110000000000</BG>
-  <BGTiles tileset="GhostShipBG" exportMode="TrimmedCSV">
+  <BGTiles exportMode="TrimmedCSV" tileset="GhostShipBG">
 
 
 -1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,76,-1,-1,76
@@ -71,7 +71,7 @@
 11111100000000000000000000111111
 11111111111000000000011111111111
 11111111111000111100011111111111</Solids>
-  <SolidTiles tileset="GhostShip" exportMode="TrimmedCSV">-1,-1,-1,46,47,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,44,45
+  <SolidTiles exportMode="TrimmedCSV" tileset="GhostShip">-1,-1,-1,46,47,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,44,45
 -1,-1,-1,50,51,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,48,49
 
 
@@ -96,40 +96,36 @@
 -1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,52,53
 -1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,56,57</SolidTiles>
   <Entities>
-    <PlayerSpawn id="0" x="30" y="200" />
-    <PlayerSpawn id="1" x="290" y="200" />
-    <LoopPlatform id="2" x="60" y="0" width="30" Direction="Up" />
-    <PlayerSpawn id="4" x="30" y="100" />
-    <PlayerSpawn id="5" x="290" y="100" />
-    <LoopPlatform id="6" x="60" y="80" width="30" Direction="Up" />
-    <LoopPlatform id="7" x="60" y="160" width="30" Direction="Up" />
-    <LoopPlatform id="3" x="230" y="0" width="30" Direction="Up" />
-    <LoopPlatform id="8" x="230" y="80" width="30" Direction="Up" />
-    <LoopPlatform id="9" x="230" y="160" width="30" Direction="Up" />
-    <TreasureChest id="10" x="100" y="180" Mode="Normal" Treasure="Arrows" Type="Normal" Timer="300" />
-    <TreasureChest id="11" x="220" y="180" Mode="Normal" Treasure="Arrows" Type="Normal" Timer="300" />
-    <TreasureChest id="12" x="110" y="115" Mode="Normal" Treasure="Arrows" Type="Normal" Timer="300" />
-    <TreasureChest id="13" x="210" y="115" Mode="Normal" Treasure="Arrows" Type="Normal" Timer="300" />
-    <TreasureChest id="14" x="160" y="60" Mode="Normal" Treasure="Arrows" Type="Normal" Timer="300" />
+    <LoopPlatform Direction="Up" id="2" width="30" x="60" y="0" />
+    <LoopPlatform Direction="Up" id="6" width="30" x="60" y="80" />
+    <LoopPlatform Direction="Up" id="7" width="30" x="60" y="160" />
+    <LoopPlatform Direction="Up" id="3" width="30" x="230" y="0" />
+    <LoopPlatform Direction="Up" id="8" width="30" x="230" y="80" />
+    <LoopPlatform Direction="Up" id="9" width="30" x="230" y="160" />
+    <TreasureChest Mode="Normal" Timer="300" Treasure="Arrows" Type="Normal" id="10" x="100" y="180" />
+    <TreasureChest Mode="Normal" Timer="300" Treasure="Arrows" Type="Normal" id="11" x="220" y="180" />
+    <TreasureChest Mode="Normal" Timer="300" Treasure="Arrows" Type="Normal" id="12" x="110" y="115" />
+    <TreasureChest Mode="Normal" Timer="300" Treasure="Arrows" Type="Normal" id="13" x="210" y="115" />
+    <TreasureChest Mode="Normal" Timer="300" Treasure="Arrows" Type="Normal" id="14" x="160" y="60" />
     <BigTreasureChest id="15" x="160" y="150" />
-    <TreasureChest id="17" x="270" y="85" Mode="Normal" Treasure="Arrows" Type="Normal" Timer="300" />
-    <TreasureChest id="18" x="160" y="150" Mode="Normal" Treasure="Arrows" Type="Normal" Timer="300" />
-    <Chain id="21" x="215" y="60" height="30" />
-    <Chain id="22" x="105" y="60" height="40" />
-    <Chain id="28" x="50" y="120" height="40" />
-    <Chain id="29" x="275" y="120" height="20" />
-    <Chain id="30" x="270" y="120" height="30" />
-    <Chain id="31" x="20" y="40" height="20" />
-    <Chain id="32" x="305" y="40" height="20" />
-    <BGLantern id="33" x="30" y="50" Lit="True" />
-    <BGLantern id="34" x="290" y="50" Lit="True" />
-    <BGLantern id="35" x="160" y="115" Lit="True" />
-    <BGLantern id="36" x="20" y="135" Lit="True" />
-    <BGLantern id="37" x="300" y="135" Lit="True" />
-    <BGLantern id="38" x="110" y="20" Lit="True" />
-    <BGLantern id="39" x="210" y="20" Lit="True" />
-    <TreasureChest id="16" x="50" y="85" Mode="Normal" Treasure="Arrows" Type="Normal" Timer="300" />
-    <Spawner id="19" x="160" y="115" name="---" />
+    <TreasureChest Mode="Normal" Timer="300" Treasure="Arrows" Type="Normal" id="17" x="270" y="85" />
+    <TreasureChest Mode="Normal" Timer="300" Treasure="Arrows" Type="Normal" id="18" x="160" y="150" />
+    <Chain height="30" id="21" x="215" y="60" />
+    <Chain height="40" id="22" x="105" y="60" />
+    <Chain height="40" id="28" x="50" y="120" />
+    <Chain height="20" id="29" x="275" y="120" />
+    <Chain height="30" id="30" x="270" y="120" />
+    <Chain height="20" id="31" x="20" y="40" />
+    <Chain height="20" id="32" x="305" y="40" />
+    <BGLantern Lit="True" id="33" x="30" y="50" />
+    <BGLantern Lit="True" id="34" x="290" y="50" />
+    <BGLantern Lit="True" id="35" x="160" y="115" />
+    <BGLantern Lit="True" id="36" x="20" y="135" />
+    <BGLantern Lit="True" id="37" x="300" y="135" />
+    <BGLantern Lit="True" id="38" x="110" y="20" />
+    <BGLantern Lit="True" id="39" x="210" y="20" />
+    <TreasureChest Mode="Normal" Timer="300" Treasure="Arrows" Type="Normal" id="16" x="50" y="85" />
+    <Spawner id="19" name="---" x="160" y="115" />
     <GhostShipWindow id="20" x="160" y="20" />
     <WaterDrop id="23" x="155" y="105" />
     <WaterDrop id="24" x="100" y="65" />
@@ -141,5 +137,13 @@
     <PirateBanner id="42" x="160" y="40" />
     <PirateBanner id="43" x="35" y="215" />
     <PirateBanner id="44" x="285" y="215" />
-  </Entities>
+  <PlayerSpawn x="30" y="200" />
+        <PlayerSpawn x="290" y="200" />
+        <PlayerSpawn x="30" y="100" />
+        <PlayerSpawn x="290" y="100" />
+        <PlayerSpawn x="100" y="30" />
+        <PlayerSpawn x="220" y="30" />
+        <PlayerSpawn x="105" y="130" />
+        <PlayerSpawn x="215" y="130" />
+      </Entities>
 </level>

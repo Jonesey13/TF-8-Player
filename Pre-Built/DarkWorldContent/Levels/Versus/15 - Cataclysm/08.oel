@@ -1,4 +1,4 @@
-<level width="320" height="240" Darkness="0.5" WrapMode="Both" CanUnlockMoonstone="False" CanUnlockPurple="False" MiasmaH="False">
+<level CanUnlockMoonstone="False" CanUnlockPurple="False" Darkness="0.5" MiasmaH="False" WrapMode="Both" height="240" width="320">
   <BG exportMode="Bitstring">00000000000000000000000000000000
 00000000000000000000000000000000
 00000000000000000000000000000000
@@ -23,7 +23,7 @@
 00000000000000000000000000000000
 00000000000000000000000000000000
 00000000000000000000000000000000</BG>
-  <BGTiles tileset="Cathedral" exportMode="TrimmedCSV">
+  <BGTiles exportMode="TrimmedCSV" tileset="Cathedral">
 
 
 
@@ -71,7 +71,7 @@
 11100011011000011000011011000111
 11100011011011011011011011000111
 11100011011011011011011011000111</Solids>
-  <SolidTiles tileset="Cathedral" exportMode="TrimmedCSV">
+  <SolidTiles exportMode="TrimmedCSV" tileset="Cathedral">
 
 
 
@@ -96,28 +96,32 @@
 
 </SolidTiles>
   <Entities>
-    <PlayerSpawn id="0" x="220" y="190" />
-    <PlayerSpawn id="1" x="100" y="190" />
-    <PlayerSpawn id="2" x="300" y="200" />
-    <PlayerSpawn id="3" x="20" y="200" />
-    <Spawner id="12" x="160" y="85" name="---" />
-    <RandomBlock id="13" x="150" y="30" width="10" height="40" />
-    <RandomBlock id="14" x="80" y="180" width="10" height="60" />
-    <RandomBlock id="15" x="80" y="0" width="10" height="40" />
-    <RandomBlock id="16" x="110" y="0" width="10" height="30" />
-    <RandomBlock id="17" x="110" y="200" width="10" height="40" />
-    <RandomBlock id="18" x="140" y="220" width="10" height="20" />
-    <RandomBlock id="19" x="140" y="0" width="10" height="30" />
-    <RandomBlock id="20" x="60" y="10" width="20" height="30" />
-    <RandomBlock id="21" x="70" y="100" width="30" height="20" />
-    <RandomBlock id="22" x="130" y="100" width="30" height="30" />
-    <RandomBlock id="23" x="90" y="80" width="30" height="30" />
-    <RandomBlock id="24" x="0" y="20" width="20" height="30" />
-    <RandomBlock id="27" x="10" y="80" width="30" height="50" />
-    <RandomBlock id="28" x="50" y="180" width="10" height="10" />
-    <RandomBlock id="29" x="140" y="180" width="10" height="10" />
-    <RandomBlock id="30" x="0" y="130" width="20" height="30" />
-    <RandomBlock id="4" x="30" y="210" width="10" height="30" />
-    <RandomBlock id="5" x="30" y="0" width="10" height="20" />
-  </Entities>
+    <Spawner id="12" name="---" x="160" y="85" />
+    <RandomBlock height="40" id="13" width="10" x="150" y="30" />
+    <RandomBlock height="60" id="14" width="10" x="80" y="180" />
+    <RandomBlock height="40" id="15" width="10" x="80" y="0" />
+    <RandomBlock height="30" id="16" width="10" x="110" y="0" />
+    <RandomBlock height="40" id="17" width="10" x="110" y="200" />
+    <RandomBlock height="20" id="18" width="10" x="140" y="220" />
+    <RandomBlock height="30" id="19" width="10" x="140" y="0" />
+    <RandomBlock height="30" id="20" width="20" x="60" y="10" />
+    <RandomBlock height="20" id="21" width="30" x="70" y="100" />
+    <RandomBlock height="30" id="22" width="30" x="130" y="100" />
+    <RandomBlock height="30" id="23" width="30" x="90" y="80" />
+    <RandomBlock height="30" id="24" width="20" x="0" y="20" />
+    <RandomBlock height="50" id="27" width="30" x="10" y="80" />
+    <RandomBlock height="10" id="28" width="10" x="50" y="180" />
+    <RandomBlock height="10" id="29" width="10" x="140" y="180" />
+    <RandomBlock height="30" id="30" width="20" x="0" y="130" />
+    <RandomBlock height="30" id="4" width="10" x="30" y="210" />
+    <RandomBlock height="20" id="5" width="10" x="30" y="0" />
+  <PlayerSpawn x="300" y="200" />
+        <PlayerSpawn x="20" y="200" />
+        <PlayerSpawn x="25" y="60" />
+        <PlayerSpawn x="295" y="60" />
+        <PlayerSpawn x="250" y="160" />
+        <PlayerSpawn x="70" y="160" />
+        <PlayerSpawn x="115" y="230" />
+        <PlayerSpawn x="205" y="230" />
+      </Entities>
 </level>

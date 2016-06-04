@@ -1,4 +1,4 @@
-<level width="320" height="240" Darkness="0.5" WrapMode="Both" CanUnlockMoonstone="False" CanUnlockPurple="False" MiasmaH="False">
+<level CanUnlockMoonstone="False" CanUnlockPurple="False" Darkness="0.5" MiasmaH="False" WrapMode="Both" height="240" width="320">
   <BG exportMode="Bitstring">00000000001111100111110000000000
 00000011111111100111111111000000
 01111011111111100111111111011110
@@ -23,7 +23,7 @@
 00011111111111111111111111111000
 00011111111111100111111111111000
 00000000001111100111110000000000</BG>
-  <BGTiles tileset="GhostShipBG" exportMode="TrimmedCSV">
+  <BGTiles exportMode="TrimmedCSV" tileset="GhostShipBG">
 -1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,69,-1,-1,-1,-1,-1,-1,69
 -1,-1,-1,-1,-1,-1,-1,-1,76,-1,-1,-1,69,-1,-1,-1,-1,-1,-1,69,-1,-1,-1,76
 -1,-1,-1,-1,-1,-1,-1,-1,12,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,12
@@ -70,7 +70,7 @@
 11110000000000111100000000001111
 11111111111000111100011111111111
 11111111111000111100011111111111</Solids>
-  <SolidTiles tileset="GhostShip" exportMode="TrimmedCSV">-1,44,45
+  <SolidTiles exportMode="TrimmedCSV" tileset="GhostShip">-1,44,45
 -1,48,49
 
 
@@ -95,41 +95,37 @@
 
 </SolidTiles>
   <Entities>
-    <LoopPlatform id="0" x="-20" y="80" width="40" Direction="Right" />
-    <LoopPlatform id="1" x="85" y="80" width="40" Direction="Right" />
-    <LoopPlatform id="4" x="60" y="150" width="40" Direction="Left" />
-    <LoopPlatform id="5" x="220" y="150" width="40" Direction="Left" />
-    <LoopPlatform id="6" x="140" y="170" width="40" Direction="Left" />
-    <LoopPlatform id="7" x="300" y="170" width="40" Direction="Left" />
-    <PlayerSpawn id="8" x="30" y="190" />
-    <PlayerSpawn id="9" x="290" y="190" />
-    <PlayerSpawn id="10" x="290" y="60" />
-    <PlayerSpawn id="11" x="30" y="60" />
-    <TreasureChest id="2" x="20" y="100" Mode="Normal" Treasure="Arrows" Type="Normal" Timer="300" />
-    <TreasureChest id="3" x="300" y="100" Mode="Normal" Treasure="Arrows" Type="Normal" Timer="300" />
-    <TreasureChest id="15" x="160" y="85" Mode="Normal" Treasure="Arrows" Type="Normal" Timer="300" />
+    <LoopPlatform Direction="Right" id="0" width="40" x="-20" y="80" />
+    <LoopPlatform Direction="Right" id="1" width="40" x="85" y="80" />
+    <LoopPlatform Direction="Left" id="4" width="40" x="60" y="150" />
+    <LoopPlatform Direction="Left" id="5" width="40" x="220" y="150" />
+    <LoopPlatform Direction="Left" id="6" width="40" x="140" y="170" />
+    <LoopPlatform Direction="Left" id="7" width="40" x="300" y="170" />
+    <TreasureChest Mode="Normal" Timer="300" Treasure="Arrows" Type="Normal" id="2" x="20" y="100" />
+    <TreasureChest Mode="Normal" Timer="300" Treasure="Arrows" Type="Normal" id="3" x="300" y="100" />
+    <TreasureChest Mode="Normal" Timer="300" Treasure="Arrows" Type="Normal" id="15" x="160" y="85" />
     <BigTreasureChest id="16" x="160" y="90" />
-    <TreasureChest id="17" x="65" y="195" Mode="Normal" Treasure="Arrows" Type="Normal" Timer="300" />
-    <TreasureChest id="18" x="255" y="195" Mode="Normal" Treasure="Arrows" Type="Normal" Timer="300" />
-    <LoopPlatform id="12" x="190" y="80" width="40" Direction="Right" />
-    <TreasureChest id="13" x="100" y="190" Mode="Normal" Treasure="Arrows" Type="Normal" Timer="300" />
-    <TreasureChest id="19" x="220" y="190" Mode="Normal" Treasure="Arrows" Type="Normal" Timer="300" />
+    <TreasureChest Mode="Normal" Timer="300" Treasure="Arrows" Type="Normal" id="17" x="65" y="195" />
+    <TreasureChest Mode="Normal" Timer="300" Treasure="Arrows" Type="Normal" id="18" x="255" y="195" />
+    <LoopPlatform Direction="Right" id="12" width="40" x="190" y="80" />
+    <TreasureChest Mode="Normal" Timer="300" Treasure="Arrows" Type="Normal" id="13" x="100" y="190" />
+    <TreasureChest Mode="Normal" Timer="300" Treasure="Arrows" Type="Normal" id="19" x="220" y="190" />
     <TeamSpawnA id="14" x="30" y="190" />
     <TeamSpawnA id="20" x="50" y="210" />
     <TeamSpawnA id="21" x="30" y="60" />
     <TeamSpawnB id="22" x="290" y="60" />
     <TeamSpawnB id="23" x="290" y="190" />
     <TeamSpawnB id="24" x="270" y="210" />
-    <Chain id="25" x="65" y="30" height="30" />
-    <Chain id="26" x="270" y="30" height="20" />
-    <Chain id="29" x="260" y="30" height="30" />
-    <Chain id="30" x="60" y="30" height="40" />
-    <BGLantern id="31" x="160" y="65" Lit="True" />
-    <BGLantern id="32" x="30" y="45" Lit="True" />
-    <BGLantern id="33" x="290" y="45" Lit="True" />
-    <BGLantern id="34" x="240" y="200" Lit="True" />
-    <BGLantern id="35" x="80" y="200" Lit="True" />
-    <Spawner id="27" x="160" y="65" name="---" />
+    <Chain height="30" id="25" x="65" y="30" />
+    <Chain height="20" id="26" x="270" y="30" />
+    <Chain height="30" id="29" x="260" y="30" />
+    <Chain height="40" id="30" x="60" y="30" />
+    <BGLantern Lit="True" id="31" x="160" y="65" />
+    <BGLantern Lit="True" id="32" x="30" y="45" />
+    <BGLantern Lit="True" id="33" x="290" y="45" />
+    <BGLantern Lit="True" id="34" x="240" y="200" />
+    <BGLantern Lit="True" id="35" x="80" y="200" />
+    <Spawner id="27" name="---" x="160" y="65" />
     <GhostShipWindow id="28" x="160" y="25" />
     <GhostShipWindow id="36" x="25" y="225" />
     <GhostShipWindow id="37" x="295" y="225" />
@@ -146,5 +142,9 @@
     <PirateBanner id="48" x="180" y="70" />
     <PirateBanner id="49" x="25" y="20" />
     <PirateBanner id="50" x="295" y="20" />
-  </Entities>
+  <PlayerSpawn x="30" y="190" />
+        <PlayerSpawn x="290" y="190" />
+        <PlayerSpawn x="290" y="60" />
+        <PlayerSpawn x="30" y="60" />
+        </Entities>
 </level>
