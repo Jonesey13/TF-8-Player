@@ -33,7 +33,6 @@ Now to setup the references for the Mod project:
 If everything is setup correctly, you should be able to just run Create8PlayerMod and this will build both Mod.dll and Patcher.exe
 
 # Known Issues / Limitations
-* The Amaranth and Cataclysm are not currently patched (Only one level half-works to prevent the game from crashing).
 * You cannot have 4 players on a team. Don't even try! The game will crash. You'll have to patch your own levels to make this work!
 * Some of the patched starting positions are a little broken but I've tried my hardest to space people out. It's the best I could do!
 * The code was cobbled together in a short period of time just to get things working. You're probably going to be rather confused by it! For the brave who want to understand what on earth the code is doing, I recommend decompiling TowerFall.exe using something like .Net Reflector, Telerik's JustDecompile or ILSpy. You should also check out the Bartizan github page as well. Also feel free to contact me with any questions and I'll try my best to answer them.
