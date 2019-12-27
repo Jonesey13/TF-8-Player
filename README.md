@@ -14,7 +14,7 @@ IMPORTANT: Please backup your entire TowerFall folder before following the steps
 * If you do not have the DarkWorld Expansion, delete the DarkWorldContent folder.
 * If you are using the Humble version, replace Content/Atlas/menuAtlas.xml with Content/Atlas/menuAtlas-Humble-Version.xml.
 * Run Patcher.exe in your TowerFall folder. There should be no errors and the TowerFall folder should now have a new file called TowerFall8Player.exe
-* (Steam Version Only) Rename TowerFall.exe to TowerFallOrig.exe and TowerFall8Player.exe to TowerFall.exe
+* (Steam and Epic Games Versions Only) Rename TowerFall.exe to TowerFallOrig.exe and TowerFall8Player.exe to TowerFall.exe
 * Enjoy!
 
 # Building the mod (for developers, using Visual Studio)
